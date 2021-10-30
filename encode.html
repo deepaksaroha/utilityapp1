@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="./encode.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="./encode.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <img id="app-icon" src="./tool.png" alt="adna"/>
+      <a href="./home.html" class="links">Home</a>
+      <div class="rlinks-box">
+        <div class="menu">
+          <a href="./encode.html">Encoder/Decoder</a>
+          <div class="submenu">
+            <a href="./encode.html">URL Encoder-Decoder</a>
+            <a href="./encode.html">Base64 Encode</a>
+            <a href="./encode.html">Base64 Decode</a>
+            <a href="./encode.html">MD5 Hash</a>
+            <a href="./encode.html">SHA-1 Hash</a>
+            <a href="./encode.html">SHA-256 Hash</a>
+            <a href="./encode.html">SHA-512 Hash</a>
+          </div>
+        </div>
+        <div class="menu">
+          <a href="./rgbhex.html">RGB/HEX</a>
+          <div class="submenu">
+            <a href="./rgbhex.html">RGB-Hex</a>
+            <a href="./rgbhex.html">Hex-RGB</a>
+          </div>
+        </div>
+        <div class="menu">
+          <a href="./time.html">Time Stamp Converter</a>
+          <div class="submenu">
+            <a href="./time.html">Epoch-Unix</a>
+            <a href="./time.html">Unix-Epoch</a>
+          </div>
+        </div>
+        <div class="menu">
+          <a href="./unit.html">Unit Converter</a>
+          <div class="submenu">
+            <a href="./unit.html">Celcius to Fehrenhite</a>
+            <a href="./unit.html">Asdfdsfdsfds</a>
+            <a href="./unit.html">Ada</a>
+            <a href="./unit.html">Asdfs</a>
+            <a href="./unit.html">Afdsfsffsf</a>
+          </div>
+        </div>
+        <div class="menu">
+          <a href="./base.html">Base Converter</a>
+          <div class="submenu">
+            <a href="./base.html">Bin to Dec</a>
+            <a href="./base.html">Bin to Hex</a>
+            <a href="./base.html">Bin to Oct</a>
+            <a href="./base.html">Dec to Bin</a>
+            <a href="./base.html">Dec to Hex</a>
+            <a href="./base.html">Dec to Oct</a>
+            <a href="./base.html">Hex to Bin</a>
+            <a href="./base.html">Hex to Dec</a>
+            <a href="./base.html">Hex to Oct</a>
+            <a href="./base.html">Oct to Bin</a>
+            <a href="./base.html">Oct to Dec</a>
+            <a href="./base.html">Oct to Hex</a>
+          </div>
+        </div>
+        <div class="menu">
+          <a href="./text.html">Text Tools</a>
+          <div class="submenu">
+            <a href="./text.html">Split Text</a>
+            <a href="./text.html">Join Text</a>
+            <a href="./text.html">Reverse Text</a>
+            <a href="./text.html">Uppercase</a>
+            <a href="./text.html">Lowercase</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="main-outer-box">
+        <div>
+          <select id="top-option" class="top-option-selector" multiple>
+              <option value="1" class="top-options"><p id="">URL Encoder/Decoder</p></option>
+              <option value="2" class="top-options">Base 64 Encoder/Decoder</option>
+              <option value="3" class="top-options">Hash Generator</option>
+          </select>
+        </div>
+
+        <div>
+          <select id="sub-option" class="sub-option-selector" multiple>
+              <option value="1" class="sub-options">MD5 Genrator</option>
+              <option value="2" class="sub-options">SHA-1 Genrator</option>
+              <option value="3" class="sub-options">SHA-256 Genrator</option>
+              <option value="4" class="sub-options">SHA-512 Genrator</option>    
+          </select>
+        </div>
+
+        <div class="inout-flex-box">
+            <div class="item text-box-container">
+                <p>Input Text</p>
+                <textarea id="input-text" class="text-box"></textarea>
+            </div>
+            <div class="item">
+                <button id="operation-switch"><img src="./swap.svg" alt="switch" /></button><br/>
+                <button id="operation-btn">Encode</button>
+            </div>
+            <div class="item text-box-container">
+                <p>Output Text</p>
+                <textarea id="output-text" class="text-box"></textarea>
+            </div>
+        </div>
+
+      </div>
+
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+.navbar {
+    border-bottom: 1px solid #CDDC39;
+    box-shadow: 0 0 10px 0 #CDDC39;
+}
+
+#app-icon{
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.links{
+    display: inline-block;
+}
+
+.rlinks-box {
+    float: right;
+    margin-top: 20px;
+}
+
+.navbar a {
+    padding: 20px;
+}
+
+.navbar a:hover{
+    background: #CDDC39;
+}
+
+.menu {   
+    position: relative;
+    display: inline;
+    cursor: pointer;
+}
+
+.submenu{
+    position: absolute;
+    right: 0px;
+    top: 2.5em;
+    display: none;
+    border: 1px solid #CDDC39;
+}
+
+.submenu a {
+    display: block;
+    padding: 5px;
+    background-color: #f6ff71;
+}
+
+.submenu a:hover{
+    background-color: #CDDC39;
+}
+
+.menu:hover>.submenu{
+    display: block;
+}

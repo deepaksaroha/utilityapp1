@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+}
+
+.flex-box{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.input-box{
+    text-align: center;
+    height: fit-content;
+    padding: 20px;
+}
+
+.input-select-box{
+    font-size: 25px;
+    width: 350px;
+    height: 80px;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.753);
+    color: white;
+}
+
+.base-input{
+    background-color: rgb(5, 46, 56);
+    border: none;
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.base-input>p{
+    margin: 1px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+}
+
+#input-value{
+    font-size: 25px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: fit-content;
+    width: 300px;
+}
+
+.select-to-box{    
+    text-align: center;
+    height: fit-content;
+}
+
+.item{
+    text-align: center;
+    margin: 50px;
+}
+
+.select-to-box{
+    width: fit-content;
+    background-color: rgb(5, 46, 56);
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+}
+
+.to-select-box{
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: grey;
+    padding: 10px;
+}
+
+.convert-btn{
+    margin-top: 50px;
+    font-size: 25px;
+    padding: 25px;
+    background-color: rgb(55, 55, 245);
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.output-box{
+    width: fit-content;
+    min-width: 300px;
+    min-height: 2em;
+    background-color: rgb(20 57 66);
+    border-radius: 10px;
+    padding: 40px;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+.output-box>p{
+    margin: 1px;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
+.base-output{
+    height: 50px;
+    min-width: 200px;
+    background-color: white;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+#input-value::placeholder{
+    color: rgb(218, 218, 218);
+    font-style: italic;
+}
+
+.output-container{    
+    text-align: center;
+    margin: 50px;
+}

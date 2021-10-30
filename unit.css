@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+}
+
+.flex-container{
+    display: flex;
+    width: 80%;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.Items{
+    padding: 20px;
+    margin: 20px;
+}
+
+.quantities{
+    margin: 20px;
+    width: 350px;
+    height: 120px;
+    text-align: center;
+    background-color: rgb(42, 115, 134);
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    border: none;
+}
+
+.input-value,.output-value{
+    width: 200px;
+    height: 50px;
+    outline: none;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgba(61, 65, 66, 0.555);
+    font-size: 25px;
+    vertical-align:middle;
+    padding: 2px;
+}
+
+.output-value{
+    width: 400px;
+    display: inline-block;
+    margin: 0;
+    overflow: auto;
+}
+
+.select-unit{
+    min-width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    box-sizing: content-box;
+    background-color: rgb(240, 240, 81);
+    border-radius: 5px;
+    border: none;
+    margin-left: 20px;
+    outline: none;
+    font-size: 20px;
+}
+
+#input-unit-selection>option, #output-unit-selection>option{
+    font-size: 20px;
+    color: rgba(41, 39, 39, 0.918);
+}
+
+#convert-btn{
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: beige;
+    background-color: rgb(6, 46, 39);
+    font-size: 20px;
+}

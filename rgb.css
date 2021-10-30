@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-container {
+    text-align: center;
+}
+
+.main-content {
+    margin: 200px auto auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-items1 {
+    border-radius: 20px;
+    /* background-color: #4DB6AC; */
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 0px 10px 0px grey;
+}
+
+.flex-items1 input{
+    width: 100px;
+    height: 70px;
+    margin: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+.flex-items1>div{
+    display: inline-block;
+    color: #0e1418;
+    font-size: 30px;
+}
+
+.flex-items2{
+    background-color: rgba(0, 0, 0, 0.335);
+    border-radius: 20px;
+    padding: 20px;
+    height:fit-content;
+    color: #fff;
+}
+.output {
+    margin: 30px 20px;
+}
+
+#output-text{
+    background-color: white;
+    text-align: center;
+    height: 50px;
+    font-size: 100%;    
+    color: black;
+}
+
+#output-text img {
+    height: 100%;
+    background-color: rgba(39 39 39 / 34%);
+}
+
+#output-text>button{
+    float: right;
+    height: 100%;
+    outline:none;
+    border: none;
+    padding: 0;
+}
+
+#red-box {
+    background-color: red;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+#green-box {
+    background-color: green;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+#blue-box {
+    background-color: blue;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.button-box{
+    margin-top: 100px;
+}
+
+.button-box>button{
+    padding: 25px 100px;
+    font-size: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(22, 22, 22);
+    color: rgb(224, 223, 223);
+}
+
+.switch-box{
+    padding: 10px;
+    background-color: #37474F;
+    border-radius: 50%;
+}
+
+.switch-box>img{
+    height: 50px;
+}
+
+#output-input{
+    width: 80%;
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    max-width: 200px;
+}
+
+#output-input::selection{
+    text-decoration: none;
+}
+
+#output-heading {
+    font-size: 40px;
+    margin: 0 0;
+}
+
+.items {
+    margin: 5px;
+}
+
+
+
+@media screen and (max-width: 1250px) {
+    .main-content {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="./unit.css" />
+    <script src="unit.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <img id="app-icon" src="./tool.png" alt="adna"/>
+      <a href="./home.html" class="links">Home</a>
+      <div class="rlinks-box">
+        <div class="menu">
+          <a href="./encode.html">Encoder/Decoder</a>
+          <div class="submenu">
+            <a href="./encode.html">URL Encoder-Decoder</a>
+            <a href="./encode.html">Base64 Encode</a>
+            <a href="./encode.html">Base64 Decode</a>
+            <a href="./encode.html">MD5 Hash</a>
+            <a href="./encode.html">SHA-1 Hash</a>
+            <a href="./encode.html">SHA-256 Hash</a>
+            <a href="./encode.html">SHA-512 Hash</a>
+          </div>
+        </div>
+        <div class="menu">
+          <a href="./rgbhex.html">RGB/HEX</a>
+          <div class="submenu">
+            <a href="./rgbhex.html">RGB-Hex</a>
+            <a href="./rgbhex.html">Hex-RGB</a>
+          </div>
+        </div>
+        <div class="menu">
+          <a href="./time.html">Time Stamp Converter</a>
+          <div class="submenu">
+            <a href="./time.html">Epoch-Unix</a>
+            <a href="./time.html">Unix-Epoch</a>
+          </div>
+        </div>
+        <div class="menu">
+          <a href="./unit.html">Unit Converter</a>
+          <div class="submenu">
+            <a href="./unit.html">Celcius to Fehrenhite</a>
+            <a href="./unit.html">Asdfdsfdsfds</a>
+            <a href="./unit.html">Ada</a>
+            <a href="./unit.html">Asdfs</a>
+            <a href="./unit.html">Afdsfsffsf</a>
+          </div>
+        </div>
+        <div class="menu">
+          <a href="./base.html">Base Converter</a>
+          <div class="submenu">
+            <a href="./base.html">Bin to Dec</a>
+            <a href="./base.html">Bin to Hex</a>
+            <a href="./base.html">Bin to Oct</a>
+            <a href="./base.html">Dec to Bin</a>
+            <a href="./base.html">Dec to Hex</a>
+            <a href="./base.html">Dec to Oct</a>
+            <a href="./base.html">Hex to Bin</a>
+            <a href="./base.html">Hex to Dec</a>
+            <a href="./base.html">Hex to Oct</a>
+            <a href="./base.html">Oct to Bin</a>
+            <a href="./base.html">Oct to Dec</a>
+            <a href="./base.html">Oct to Hex</a>
+          </div>
+        </div>
+        <div class="menu">
+          <a href="./text.html">Text Tools</a>
+          <div class="submenu">
+            <a href="./text.html">Split Text</a>
+            <a href="./text.html">Join Text</a>
+            <a href="./text.html">Reverse Text</a>
+            <a href="./text.html">Uppercase</a>
+            <a href="./text.html">Lowercase</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+        <div class="flex-container">
+            <div class="Items">
+                <button id="distance" class="quantities">Distance</button>
+                <button id="time" class="quantities">Time</button>
+                <button id="weight" class="quantities">Weight</button>
+            </div>
+            <div class="Items">
+                <div>
+                    <input id="input-value" type="text" class="input-value" /><br/>
+                    <select id="input-unit-selection" class="select-unit"  disabled="true" >
+                    </select>
+                </div>
+            </div>
+            <div class="Items">
+                <button id="convert-btn">Convert</button>
+            </div>
+            <div class="Items">
+                <p id="output-value" class="output-value"></p><br/>
+                <select id="output-unit-selection" class="select-unit" disabled="true">
+                </select>
+            </div>
+        </div>
+        
+    </main>
+  </body>
+</html>

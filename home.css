@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+
+.home-grid-box>a{
+    text-decoration: none;
+    color: unset;
+    padding: 0;
+}
+
+.home-main-outer-box{
+    margin: 50px;
+    text-align: center;
+}
+
+.home-grid-box{
+    display: inline-grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 50px;
+}
+
+.home-grid-item{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+    background-color: indianred;
+}
+
+.home-grid-item>div>img{
+    height: 100px;
+}
+
+.home-grid-item>div>p{
+    margin: 10px;
+}
