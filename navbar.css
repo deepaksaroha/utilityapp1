@@ -10,8 +10,9 @@ a{
 }
 
 .navbar {
-    border-bottom: 1px solid #CDDC39;
-    box-shadow: 0 0 10px 0 #CDDC39;
+    position: relative;
+    border-bottom: 1px solid rgb(195, 193, 193);
+    box-shadow: 0 0 10px 0 grey;
 }
 
 #app-icon{
@@ -32,10 +33,13 @@ a{
 
 .navbar a {
     padding: 20px;
+    padding-right: 0px;
 }
 
 .navbar a:hover{
-    background: #CDDC39;
+    background: rgb(209, 208, 208);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .menu {   
@@ -49,19 +53,84 @@ a{
     right: 0px;
     top: 2.5em;
     display: none;
-    border: 1px solid #CDDC39;
+    color: rgb(48, 60, 83);
 }
 
 .submenu a {
     display: block;
     padding: 5px;
-    background-color: #f6ff71;
+    background-color: rgb(218, 218, 218);
 }
 
 .submenu a:hover{
-    background-color: #CDDC39;
+    background-color: rgb(209, 209, 209);
 }
 
-.menu:hover>.submenu{
-    display: block;
+
+#menu-icon{
+    border: none;
+    background-color: unset;
+    vertical-align: middle;
+    float: right;
+    padding: 1em;
+    display: none;
+    cursor: pointer;
+}
+
+.menu>button{
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: unset;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1150px) {
+    #menu-icon{
+        display: block;
+    }
+    .rlinks-box{
+        display: none;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        background-color: rgb(255, 255, 255);
+        margin-top: calc(1rem + 40px);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-shadow: 0 0 10px 2px grey;
+        color: rgb(75, 75, 75);
+    }
+
+    .menu{
+        position: relative;
+        display: block;
+        padding: 10px 20px ;
+    }
+
+    .menu:hover>.submenu{
+        display: none;
+    }
+
+    .menu>a{
+        padding: 0;
+    }
+
+    .submenu{
+        position: relative;
+        left: 0px;
+        top: 0em;
+        opacity:100%;
+    }
+
+    .submenu a {
+        background-color: rgb(255, 219, 219);
+    }
+
+}
+
+@media screen and (min-width: 1151px) {
+    .rlinks-box{
+        display: block !important;
+    }
 }
