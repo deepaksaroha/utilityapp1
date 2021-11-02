@@ -71,20 +71,17 @@ body{
 }
 
 #red-box {
-    background-color: red;
+    background-color: rgb(233, 64, 64);
     border-radius: 10px;
-    opacity: 0.8;
 }
 
 #green-box {
-    background-color: green;
+    background-color: rgb(49, 151, 49);
     border-radius: 10px;
-    opacity: 0.8;
 }
 #blue-box {
-    background-color: blue;
+    background-color: rgb(53, 53, 243);
     border-radius: 10px;
-    opacity: 0.8;
 }
 
 .button-box{
