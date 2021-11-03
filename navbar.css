@@ -100,6 +100,7 @@ a{
         border-bottom-left-radius: 10px;
         box-shadow: 0 0 10px 2px grey;
         color: rgb(75, 75, 75);
+        z-index: 1;
     }
 
     .menu{
