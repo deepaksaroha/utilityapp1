@@ -43,7 +43,7 @@ body {
 }
 
 .switch-box>img{
-    height: 50px;
+    height: 2em;
 }
 
 
@@ -76,7 +76,35 @@ body {
 }
 
 @media screen and (max-width: 850px) {
+    .outer-box{
+        margin: 50px auto;
+    }
     .container-box {
         flex-direction: column;
+    }
+
+    .btn-box{
+        margin-top: 20px;
+    }
+
+    .btn-box>button{
+        padding: 1em 1em;
+        font-size: 1.5em;
+        width: 60%;
+        overflow: hidden;
+    }
+    input{
+        font-size: 20px;
+    }
+
+    .partitioner-top, .partitioner-bottom{
+        padding: 10px;
+        font-size: 25px;
+    }
+
+    .partitioner-bottom>input{
+        font-size: 25px;
+        width: 100%;
+        min-width: 200px;
     }
 }
