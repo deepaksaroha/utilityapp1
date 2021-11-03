@@ -1,9 +1,24 @@
-window.onload = () =>{
+window.addEventListener('load', () =>{
 
     const cnvBtn = document.getElementById("convert-btn");
 
+    const options = document.querySelectorAll('.option-btn');
+    let option = null;
+
+    options.forEach(element=>{
+        element.addEventListener('click', (e)=>{
+            const eve = new Event('click');
+            document.querySelector('#text-expand-btn').dispatchEvent(eve);
+
+            if(option != null && e.target.id !== option){
+                document.getElementById(option).style.background = 'rgb(97 128 120 / 76)';
+            }
+            option = e.target.id;
+            e.target.style.backgroundColor = 'rgb(61 74 71)';
+        })
+    })
+
     cnvBtn.addEventListener('click', ()=>{
-        const option = document.getElementById("option-selector").value;
         const inputText = document.getElementById("input-text").value;
         const output = document.getElementById("output-text");
 
@@ -51,4 +66,19 @@ window.onload = () =>{
     }
     
 
-}
+    const expandBtn = document.querySelector('#text-expand-btn');
+    const optionsEle = document.getElementById('option-selector');
+
+
+    expandBtn.addEventListener('click', ()=>{
+        if(optionsEle.style.display == 'block'){
+            optionsEle.style.display = 'none';
+        }else{
+            optionsEle.style.display = 'block';
+        }
+        
+    })
+
+
+
+})
