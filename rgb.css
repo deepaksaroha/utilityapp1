@@ -3,6 +3,11 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+html {
+    overflow-y: auto;
+    overflow-y: overlay;
+}
+
 .main-container {
     text-align: center;
 }

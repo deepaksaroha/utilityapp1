@@ -9,7 +9,7 @@ body{
 }
 
 .home-main-outer-box{
-    margin: 50px;
+    margin: 50px 20px;
     text-align: center;
 }
 
@@ -38,4 +38,39 @@ body{
 
 .home-grid-item>div>p{
     margin: 10px;
+}
+
+@media screen and (max-width: 1150px) { 
+    .home-grid-box{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 700px) { 
+    .home-grid-box{
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: unset;
+    }
+
+    .home-grid-item{
+        height: fit-content;
+        padding: 10px;
+        justify-content: left;
+    }
+
+    .home-grid-item>div>img{
+        height: 50px;
+    }
+
+    .home-grid-item>div p{
+        display: inline;
+        overflow: hidden;
+    }
+    
+    .home-grid-item>div>img{
+        vertical-align: middle;
+    }
+
+
 }
