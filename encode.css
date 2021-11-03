@@ -7,7 +7,8 @@ body{
 }
 
 .main-outer-box{
-    margin: 50px;
+    margin: 50px auto;
+    width: 80%;
     text-align: center;
 }
 
@@ -48,7 +49,8 @@ body{
 }
 
 .inout-flex-box{
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
     justify-content: center;
     align-items: center;
 }
@@ -58,7 +60,7 @@ body{
 }
 
 .text-box-container{
-    padding: 20px;
+    padding: 10px;
     background-color: rgb(31, 47, 47);
     color: rgb(221, 220, 220);
     border-radius: 20px;
@@ -66,7 +68,7 @@ body{
 }
 
 .text-box{
-    width: 400px;
+    width: 90%;
     height: 200px;
     outline: none;
     border: none;
@@ -88,4 +90,49 @@ body{
 
 #operation-switch>img{
     height: 40px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1150px) {
+    .inout-flex-box{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-option-selector{
+        width: 100%;
+        height: unset;
+    }
+
+    .top-options{
+        display: block;
+        position: relative;
+        margin: 0px auto;
+        width: 80%;
+        overflow: hidden;
+    }
+
+    .item{
+        margin: 1px;
+    }
+    .item>p{
+        margin: 5px;
+    }
+    .item>button{
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .item{
+        margin: 1px;
+    }
+    .item>p{
+        margin: 5px;
+    }
+    .item>button{
+        margin: 1px;
+    }
 }

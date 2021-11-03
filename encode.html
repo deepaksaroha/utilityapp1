@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./navbar.css" />
     <link rel="stylesheet" href="./encode.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="./navbar.js"></script>
     <script src="./encode.js"></script>
-    <script type="text/javascript" src="./navbar.js"></script>
   </head>
   <body>
     <div class="navbar">
@@ -89,8 +89,9 @@
               <option value="2" class="top-options">Base 64 Encoder/Decoder</option>
               <option value="3" class="top-options">Hash Generator</option>
           </select>
+          <button>expand</button>
         </div>
-
+        
         <div>
           <select id="sub-option" class="sub-option-selector" multiple>
               <option value="1" class="sub-options">MD5 Genrator</option>
@@ -106,7 +107,7 @@
                 <textarea id="input-text" class="text-box"></textarea>
             </div>
             <div class="item">
-                <button id="operation-switch"><img src="./swap.svg" alt="switch" /></button><br/>
+                <button id="operation-switch"><img src="./swap.svg" alt="switch" /></button>
                 <button id="operation-btn">Encode</button>
             </div>
             <div class="item text-box-container">

@@ -13,7 +13,7 @@ html {
 }
 
 .main-content {
-    margin: 100px auto auto;
+    margin: 100px auto;
     width: 80%;
     display: flex;
     justify-content: space-around;
@@ -21,26 +21,34 @@ html {
 }
 .flex-items1 {
     border-radius: 20px;
-    /* background-color: #4DB6AC; */
     padding: 50px;
     text-align: center;
     box-shadow: 0 0px 10px 0px grey;
+    max-width: 350px;
 }
 
+
+.flex-items1>div{
+    width: 25%;
+    display: inline-block;
+    color: #0e1418;
+    font-size: 150%;
+    padding: 10px;
+}
+
+
 .flex-items1 input{
-    width: 100px;
-    height: 70px;
-    margin: 10px;
+    width: 95%;
     outline: none;
     border: none;
     border-radius: 5px;
-    font-size: 30px;
+    font-size: 150%;
 }
 
-.flex-items1>div{
-    display: inline-block;
-    color: #0e1418;
-    font-size: 30px;
+#red-box>div, #green-box>div, #blue-box>div{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .flex-items2{
@@ -94,8 +102,8 @@ html {
 }
 
 .button-box>button{
-    padding: 25px 100px;
-    font-size: 30px;
+    padding: 5% 20%;
+    font-size: 150%;
     border-radius: 20px;
     border: none;
     background-color: rgb(22, 22, 22);
@@ -109,15 +117,15 @@ html {
 }
 
 .switch-box>img{
-    height: 50px;
+    height: 2em;
 }
 
 #output-input{
-    width: 80%;
+    width: 50%;
     height: 100%;
     box-sizing: border-box;
     float: left;
-    font-size: 30px;
+    font-size: 150%;
     outline: none;
     border: none;
     padding: 0;
@@ -130,7 +138,7 @@ html {
 }
 
 #output-heading {
-    font-size: 40px;
+    font-size: 150%;
     margin: 0 0;
 }
 
@@ -138,10 +146,40 @@ html {
     margin: 5px;
 }
 
-
-
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 950px) {
+    .flex-items1 {
+        padding: 20px;
+    }
     .main-content {
         flex-direction: column;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .flex-items1 {
+        padding: 5px;
+    }
+    .main-content {
+        flex-direction: column;
+        margin: 50px auto;
+    }
+
+    #red-box>p, #green-box>p, #blue-box>p, #red-box>div, #green-box>div, #blue-box>div{
+        display: inline;
+    }
+
+    #red-box, #green-box, #blue-box{
+        width: 80%;
+    }
+
+    .flex-items1 input{
+        width: 50%;
+        float: right;
+    }
+
+    .button-box{
+        margin-top: 20px;
+    }
+}
+
+

@@ -1,4 +1,4 @@
-window.onload = () =>{
+window.addEventListener('load', () =>{
     let subOptions = document.getElementById("sub-option");
 
     let topSelection = "1";
@@ -149,9 +149,4 @@ function SHA512Hash(inputText){
     return CryptoJS.SHA512(inputText);
 }
 
-
-
-
-    
-
-}
+})

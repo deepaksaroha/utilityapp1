@@ -1,4 +1,4 @@
-window.onload = () => {
+window.addEventListener('load', () => {
 
     const breadIcon = document.getElementById('menu-icon');
     let displayNavbar = false;
@@ -24,4 +24,4 @@ window.onload = () => {
             }            
         })
     })
-}
+})
