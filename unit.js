@@ -201,4 +201,15 @@ window.onload = () =>{
     })
     
 
+    const expandBtn = document.getElementById('unit-expand-btn');
+    const options = document.querySelector('.quantity-options>div');
+    expandBtn.addEventListener('click', ()=>{
+        if(options.style.display == "block"){
+            options.style.display = "none";
+        }else{
+            options.style.display = "block";
+        }
+        
+    })
+
 }

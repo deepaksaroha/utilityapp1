@@ -30,6 +30,18 @@ body{
     border: none;
 }
 
+#unit-expand-btn{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    height: 50px;
+    background-color: rgb(19, 58, 68);
+    color: white;
+    font-size: 20px;
+    display: none;
+}
+
 .input-value,.output-value{
     width: 100%;
     height: 50px;
@@ -89,15 +101,20 @@ body{
         margin: 50px auto;
         max-width: 400px;
     }
+
+    #unit-expand-btn{
+        display: block;
+    }
+
+    .quantity-options>div{
+        position: relative;
+        display: none;
+    }
+
     .quantities{
         width: 100%;
         display: block;
         margin: 1px auto;
-    }
-    #time, #weight{
-        position: absolute;
-        left: 0;
-        top: 0;
     }
 
     .Items{
@@ -114,20 +131,16 @@ body{
         margin: 50px 20px;
         max-width: 400px;
     }
-    .quantities{
-        width: 100%;
-        display: block;
-        margin: 1px auto;
-    }
-    #time, #weight{
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
 
     .Items{
         width: 100%;
         margin: 5px;
         padding: 10px;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .quantity-options>div{
+        display: block !important;
     }
 }
