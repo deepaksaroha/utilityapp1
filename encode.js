@@ -61,64 +61,34 @@ window.addEventListener('load', () =>{
             subop.style.display = 'none';
             subop.style.visibility = 'visible';
             
-    
             output.value = '';
             input.value = '';
 
-            if(toEncodeOrDecode === 1){
-                toEncodeOrDecode = 0;
-                document.getElementById("operation-btn").innerText = "Decode";
-            }else{
-                toEncodeOrDecode = 1;
-                document.getElementById("operation-btn").innerText = "Encode";
-            }
-
-            
+            subSelection = e.target.id;
             subop.style.display = 'none';
         })
     })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     const input = document.getElementById("input-text");
     const output = document.getElementById("output-text");
 
-    topop.addEventListener("on", (e)=>{
-        
-
-    })
-
-    subop.addEventListener("change", (e)=>{
-        subop.style.visibility = 'hidden';
-        
-        input.value = '';
-        output.value = '';
-
-        subSelection = e.target.value;
-
-    })
 
     const opearationSwitch = document.getElementById("operation-switch");
     opearationSwitch.addEventListener("click", ()=>{
+        
+
+        input.value = '';
+        output.value = '';
+
+        if(toEncodeOrDecode === 1){
+            toEncodeOrDecode = 0;
+            document.getElementById("operation-btn").innerText = "Decode";
+        }else{
+            toEncodeOrDecode = 1;
+            document.getElementById("operation-btn").innerText = "Encode";
+        }
+
         
     })
 
@@ -129,11 +99,6 @@ window.addEventListener('load', () =>{
 
         output.value = '';
         let inputText = input.value;
-
-        
-        console.log(inputText);
-        console.log(topSelection);
-        console.log(subSelection);
 
         switch(topSelection){
             case "1":

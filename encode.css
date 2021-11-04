@@ -115,6 +115,7 @@ body{
 
     #hash-selector{
         display: block;
+        visibility: hidden;
     }
 
     .expand-btn{
