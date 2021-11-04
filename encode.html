@@ -83,21 +83,25 @@
 
     <main>
       <div class="main-outer-box">
+        <div style="position: relative;">
+        <button class="expand-btn" id="encoder-selector">Encoder</button>
         <div>
-          <select id="top-option" class="top-option-selector" multiple>
-              <option value="1" class="top-options"><p id="">URL Encoder/Decoder</p></option>
-              <option value="2" class="top-options">Base 64 Encoder/Decoder</option>
-              <option value="3" class="top-options">Hash Generator</option>
-          </select>
+          <div id="top-option" class="top-option-selector" multiple>
+              <div id="1" class="top-options">URL Encoder/Decoder</div>
+              <div id="2" class="top-options">Base 64 Encoder/Decoder</div>
+              <div id="3" class="top-options">Hash Generator</div>
+          </div>
         </div>
         
+        <button class="expand-btn" id="hash-selector">Hash Function</button>
         <div>
-          <select id="sub-option" class="sub-option-selector" multiple>
-              <option value="1" class="sub-options">MD5 Genrator</option>
-              <option value="2" class="sub-options">SHA-1 Genrator</option>
-              <option value="3" class="sub-options">SHA-256 Genrator</option>
-              <option value="4" class="sub-options">SHA-512 Genrator</option>    
-          </select>
+          <div id="sub-option" class="sub-option-selector" multiple>
+              <div id="1" class="sub-options">MD5 Genrator</div>
+              <div id="2" class="sub-options">SHA-1 Genrator</div>
+              <div id="3" class="sub-options">SHA-256 Genrator</div>
+              <div id="4" class="sub-options">SHA-512 Genrator</div>
+          </div>
+        </div>
         </div>
 
         <div class="inout-flex-box">

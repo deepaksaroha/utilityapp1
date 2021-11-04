@@ -2,10 +2,6 @@ body{
     margin: 0;
 }
 
-.sub-option-selector{
-    display: none;
-}
-
 .main-outer-box{
     margin: 50px auto;
     width: 80%;
@@ -16,7 +12,6 @@ body{
     border: none;
     outline: none;
     overflow: hidden;
-    height: 100px;
 }
 
 .top-options{
@@ -35,6 +30,7 @@ body{
     outline: none;
     overflow: hidden;
     height: 100px;
+    visibility: hidden;
 }
 
 .sub-options{
@@ -93,6 +89,22 @@ body{
     vertical-align: middle;
 }
 
+.expand-btn{
+    width: 80%;
+    border: none;
+    height: 3em;
+    border-radius: 5px;
+    background-color: blueviolet;
+    font-size: 1.2em;
+    display: none;
+    margin: 5px auto;
+    color: white;
+}
+
+#hash-selector{
+    display: none;
+}
+
 @media screen and (max-width: 1150px) {
     .inout-flex-box{
         display: grid;
@@ -101,14 +113,41 @@ body{
         align-items: center;
     }
 
+    #hash-selector{
+        display: block;
+    }
+
+    .expand-btn{
+        display: block;
+    }
+
     .top-option-selector{
         width: 100%;
         height: unset;
+        position: absolute;
+        top: 0;
+        left: 0;
+        visibility: hidden;
     }
 
     .top-options{
         display: block;
-        position: relative;
+        margin: 0px auto;
+        width: 80%;
+        overflow: hidden;
+    }
+
+    .sub-option-selector{
+        width: 100%;
+        height: unset;
+        position: absolute;
+        top: calc(1em + 40px);
+        left: 0;
+        display: none;
+    }
+
+    .sub-options{
+        display: block;
         margin: 0px auto;
         width: 80%;
         overflow: hidden;
@@ -135,4 +174,20 @@ body{
     .item>button{
         margin: 1px;
     }
+}
+
+@media screen and (min-width: 1151px){
+    .top-option-selector{
+        visibility: visible !important;
+    }
+
+    .sub-option-selector{
+        display: block !important;
+    }
+
+    #hash-selector{
+        display: none !important;
+    }
+
+    
 }
