@@ -105,6 +105,8 @@ main p{
     padding: 1em;
     font-size: 100%;
     margin: 0 auto;
+    max-width: 80%;
+    overflow-wrap: anywhere;
 }
 
 .output-box>p{
