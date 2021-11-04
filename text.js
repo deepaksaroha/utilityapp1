@@ -5,10 +5,16 @@ window.addEventListener('load', () =>{
     const options = document.querySelectorAll('.option-btn');
     let option = null;
 
+    
+    const expandBtn = document.querySelector('#text-expand-btn');
+    const optionsEle = document.getElementById('option-selector');
+
     options.forEach(element=>{
         element.addEventListener('click', (e)=>{
+            expandBtn.innerText = e.target.innerText;
+
             const eve = new Event('click');
-            document.querySelector('#text-expand-btn').dispatchEvent(eve);
+            expandBtn.dispatchEvent(eve);
 
             if(option != null && e.target.id !== option){
                 document.getElementById(option).style.background = 'rgb(97 128 120 / 76)';
@@ -66,19 +72,17 @@ window.addEventListener('load', () =>{
     }
     
 
-    const expandBtn = document.querySelector('#text-expand-btn');
-    const optionsEle = document.getElementById('option-selector');
 
 
-    expandBtn.addEventListener('click', ()=>{
-        if(optionsEle.style.display == 'block'){
-            optionsEle.style.display = 'none';
+    expandBtn.addEventListener('click', (e)=>{
+
+
+        if(optionsEle.style.visibility !== 'hidden'){
+            optionsEle.style.visibility = 'hidden';
         }else{
-            optionsEle.style.display = 'block';
+            optionsEle.style.visibility = 'visible';
         }
-        
     })
 
-
-
+    
 })

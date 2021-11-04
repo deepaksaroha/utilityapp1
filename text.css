@@ -27,6 +27,14 @@ main{
     padding: 0.7em 1em;
     color: white;
     font-size: 100%;
+    white-space: nowrap;
+}
+
+#option-selector{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
 }
 
 .inout-flex-box{
@@ -80,6 +88,7 @@ main{
     color: white;
     display: none;
     box-sizing: border-box;
+    pointer-events: none;
 }
 
 @media screen and (max-width: 1150px) {
@@ -89,7 +98,8 @@ main{
     }
     
     #option-selector{
-        display: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .option-btn{
@@ -99,16 +109,18 @@ main{
     #text-expand-btn{
         margin: 20px auto;
         display: block;
+        pointer-events:all;
     }
 }
 
 @media screen and (min-width: 1151px){
     #option-selector{
-        display: block !important;
+        display: grid !important;
+        visibility: visible;
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 851px) {
 
     main{
         font-size: 20px;
@@ -122,12 +134,16 @@ main{
     }
     
     #option-selector{
-        display: none;
+        display: block;
         position: absolute;
         z-index: 1;
         width: 70%;
         left: 15%;
-        background-color: rgba(66, 78, 74, 0.678);
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        overflow: auto;
+        scroll-snap-type: none;
     }
 
     .option-btn{
@@ -139,9 +155,24 @@ main{
         margin: 20px auto;
         width: 70%;
         display: block;
+        height: 2em;
     }
 
     .inout-flex-box{
         grid-template-columns: 1fr;
     }
+
+    .text-box{
+        height: 100px;
+    }
+
+    .inout-flex-box{
+        margin: 10px;
+        gap: 0;
+    }
+
+    .item{
+        margin: 10px;
+    }
+
 }
