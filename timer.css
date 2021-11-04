@@ -1,0 +1,39 @@
+main{
+    font-size: 100px;
+}
+
+.timer-outer-box{
+    text-align: center;
+    margin-top: calc(50vh - 2em);
+}
+
+.timer-input{
+    display: inline-block;
+    font-size: 80%;
+    width: 2ch;
+    height: 1em;
+    border: none;
+    outline: none;
+}
+
+.timer-btns{
+    font-size: 35%;
+    height: 3em;
+    width: 5em;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(51, 114, 216);
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    main{
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main{
+        font-size: 50px;
+    }
+}
