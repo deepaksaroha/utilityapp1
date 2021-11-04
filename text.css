@@ -98,6 +98,7 @@ main{
     }
     
     #option-selector{
+        visibility: hidden;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -134,6 +135,7 @@ main{
     }
     
     #option-selector{
+        visibility: hidden;
         display: block;
         position: absolute;
         z-index: 1;
