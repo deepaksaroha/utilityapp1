@@ -1,0 +1,50 @@
+main{
+    font-size: 100px;
+}
+
+.stop-outer-box{
+    text-align: center;
+    margin-top: calc(50vh - 3em);
+}
+
+#stop-d-box{
+    display: inline-block;
+    font-size: 2em;
+    width: 2ch;
+    height: 1em;
+    border: none;
+    outline: none;
+}
+
+.timer-btns{
+    font-size: 35%;
+    height: 2.5em;
+    width: 5em;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+#start-btn{
+    background-color: rgb(37, 95, 37);
+}
+
+#stop-btn{
+    background-color: grey;
+}
+
+#reset-btn{
+    background-color: rgb(231, 43, 43);
+}
+
+@media screen and (max-width: 800px) {
+    main{
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main{
+        font-size: 50px;
+    }
+}
