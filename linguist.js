@@ -20,7 +20,8 @@ const languages = [
     'Sindhi',
     'Tamil',
     'Telugu',
-    'Urdu'
+    'Urdu',
+    'English'
 ]
 
 const codes = [
@@ -45,7 +46,8 @@ const codes = [
     'sd',
     'ta',
     'te',
-    'ur'
+    'ur',
+    'en'
 ]
 
 window.addEventListener('load', ()=>{
@@ -69,6 +71,23 @@ window.addEventListener('load', ()=>{
         outSelect.appendChild(opt);
     }
 
-    
-    
+    const btn = document.getElementById('lang-btn');
+    btn.addEventListener('click', ()=>{
+        let inputLang = document.getElementById('lang-inopt').value;
+        let outputLang = document.getElementById('lang-outopt').value;
+
+        let inputText = document.getElementById('lang-input').value;
+        let outputEle = document.getElementById('lang-output');
+
+        fetch(`https://api.mymemory.translated.net/get?q=${inputText}&langpair=${inputLang}|${outputLang}`)
+        .then(response =>  response.json() )
+        .then(response=>{
+            outputEle.innerText = response.responseData.translatedText;
+        })
+        .catch(error => {
+            outputEle.innerText = 'Something went Wrong. Try Again!';
+        })
+        
+    })
+
 })

@@ -60,6 +60,9 @@ main>div{
     border-radius: 10px;
     box-shadow: 0 0 5px 2px grey;
     max-width: 100%;
+    outline: none;
+    padding: 10px;
+    font-size: 1em;
 }
 
 #lang-btn{
@@ -69,7 +72,7 @@ main>div{
     background-color: rgb(34, 67, 251);
     color: white;
     border-radius: 1em;
-
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 500px) {
