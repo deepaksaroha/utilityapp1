@@ -85,7 +85,7 @@ a{
     vertical-align: middle;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1580px) {
     #menu-icon{
         display: block;
     }
@@ -130,7 +130,7 @@ a{
 
 }
 
-@media screen and (min-width: 1151px) {
+@media screen and (min-width: 1581px) {
     .rlinks-box{
         display: block !important;
     }
