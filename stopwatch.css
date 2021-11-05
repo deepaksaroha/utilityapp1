@@ -8,12 +8,12 @@ main{
 }
 
 #stop-d-box{
-    display: inline-block;
     font-size: 2em;
     width: 2ch;
     height: 1em;
     border: none;
     outline: none;
+    margin: 0 auto;
 }
 
 .timer-btns{

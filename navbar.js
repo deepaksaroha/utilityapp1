@@ -1,22 +1,22 @@
 let menuList = [
     {
         subMenuList: [],
-        href: './timer',
+        href: './timer.html',
         itemName: 'Timer'
     },
     {
         subMenuList: [],
-        href: './stopwatch',
+        href: './stopwatch.html',
         itemName: 'Stopwatch'
     },
     {
         subMenuList: [],
-        href: './ip',
+        href: './ip.html',
         itemName: 'My IP'
     },
     {
         subMenuList: [],
-        href: './linguist',
+        href: './linguist.html',
         itemName: 'Linguist'
     }
 ]

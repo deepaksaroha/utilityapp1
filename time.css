@@ -13,6 +13,17 @@ body {
     align-items: center;
 }
 
+
+.disp{
+    font-size: 3vw;
+    color: white;
+    background-color: #37474F;
+    width: fit-content;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
 .input-box{
     text-align: center;
     border-top-left-radius: 20px;
@@ -77,8 +88,14 @@ body {
 
 @media screen and (max-width: 850px) {
     .outer-box{
+        width: 90%;
         margin: 50px auto;
     }
+
+    .disp{
+        font-size: 4vw;
+    }
+
     .container-box {
         flex-direction: column;
     }

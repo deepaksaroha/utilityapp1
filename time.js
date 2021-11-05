@@ -1,5 +1,19 @@
-window.onload = () => {
-    
+window.addEventListener('load', () => {
+
+    const humanClock = document.getElementById('human-clock');
+    const epochClock = document.getElementById('epoch-clock');
+
+    let date = new Date();
+
+    humanClock.innerText = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+    epochClock.innerText = Math.floor(date.getTime()/1000.0);
+
+    setInterval(()=>{
+        date = new Date();
+        humanClock.innerText = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+        epochClock.innerText = Math.floor(date.getTime()/1000.0);
+    }, 1000)
+
     let f = 0;
 
     const switch1 = document.getElementById("switch");
@@ -47,4 +61,4 @@ window.onload = () => {
             document.getElementById("human-time-input").value = hours+":"+minutes+":"+secs;
         }
     })
-}
+})
