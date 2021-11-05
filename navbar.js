@@ -25,7 +25,6 @@ let menuList = [
 window.addEventListener('load', () => {
     
     const menuItemBox = document.querySelector('#navbar-menu-box');
-    console.log(Object.keys(menuList));
     menuList.forEach(element=>{
         let menu = document.createElement('div');
         menu.setAttribute('class', 'menu');

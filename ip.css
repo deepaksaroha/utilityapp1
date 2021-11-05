@@ -1,0 +1,31 @@
+main{
+    font-size: 6vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.disp{
+    padding-top: calc(50vh - 2em);
+}
+
+main>div{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+#ip-btn{
+    font-size: 100%;
+    border: none;
+    background-color: grey;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 650px) {
+    main{
+        font-size: 9vw;
+    }
+}
