@@ -62,10 +62,10 @@ window.addEventListener('load', ()=>{
 
 
             document.getElementById('reset-btn').addEventListener('click', ()=>{
-                clearInterval(timer);
                 secondsInput.value = '';
                 minutesInput.value = '';
                 hoursInput.value = '';
+                clearInterval(timer);
             })
 
             return timer;
