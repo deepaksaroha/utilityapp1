@@ -16,7 +16,7 @@ body{
 .home-grid-box{
     margin-top: 75px;
     display: inline-grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 50px;
 }
 
