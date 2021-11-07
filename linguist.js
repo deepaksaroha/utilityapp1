@@ -1,53 +1,43 @@
 const languages = [
     'Assamese',
     'Bengali (Bangla)',
-    'Bodo',
-    'Dogri',
     'Gujarati',
     'Hindi',
     'Kannada',
-    'Kashmiri',
-    'Konkani',
-    'Maithili',
     'Malayalam',
-    'Meitei (Manipuri)',
     'Marathi',
     'Nepali',
     'Odia',
     'Punjabi',
     'Sanskrit',
-    'Santali',
     'Sindhi',
     'Tamil',
     'Telugu',
     'Urdu',
-    'English'
+    'English',
+    'French',
+    'Spanish'
 ]
 
 const codes = [
     'as',
     'bn',
-    'brx',
-    'doi',
     'gu',
     'hi',
     'kn',
-    'ks',
-    'gom',
-    'mai',
     'ml',
-    'mni',
     'mr',
     'ne',
     'or',
     'pa',
     'sa',
-    'sat',
     'sd',
     'ta',
     'te',
     'ur',
-    'en'
+    'en',
+    'fr',
+    'es'
 ]
 
 window.addEventListener('load', ()=>{
