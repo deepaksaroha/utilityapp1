@@ -20,7 +20,7 @@ body{
     border-radius: 10px;
     padding: 20px;
     font-size: 20px;
-    background-color: blueviolet;
+    background-color: rgb(113, 128, 134);
     color: rgb(221, 221, 221);
     box-sizing: border-box;
 }
@@ -79,8 +79,7 @@ body{
     padding: 15px 30px;
     border: none;
     outline: none;
-    background-color: firebrick;
-    border-radius: 10px;
+    background-color: #778979;
     color: white;
 }
 
