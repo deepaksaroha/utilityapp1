@@ -76,6 +76,7 @@ window.addEventListener('load', () =>{
 
     expandBtn.addEventListener('click', (e)=>{
 
+        console.log('abcd');
 
         if(optionsEle.style.visibility == 'visible'){
             optionsEle.style.visibility = 'hidden';
