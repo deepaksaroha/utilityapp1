@@ -28,8 +28,7 @@ body{
     height: 200px;
     box-sizing: border-box;
     border: none;
-    border-radius: 20px;
-    background-color: indianred;
+    background-color: #b8e6c891;
 }
 
 .home-grid-item>div>img{
