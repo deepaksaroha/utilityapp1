@@ -10,13 +10,13 @@ A website which contains few of the most commonly used utility tools.
 - Text Transformer
 
 ## Technologies used
-<li>html</li>
-<li>css</li>
-<li>Javascript</li>
-<li>nodejs</li>
-<li>express ^4.17.1</li>
-<li>axios ^0.21.1</li>
-<li>Heroku</li>
+- html
+- css
+- Javascript
+- nodejs
+- express ^4.17.1
+- axios ^0.21.1
+- Heroku
 
 ## UI
 <img src="/readmeimages/ua-ss1.jpg" />
