@@ -21,7 +21,7 @@ A website which contains few of the most commonly used utility tools.
 ## UI
 <img src="/readmeimages/ua-ss1.jpg" height="400px"/>
 <hr/>
-<img src="/readmeimages/ua-ss2.png" />
+<img src="/readmeimages/ua-ss2.png" height="400px" />
 <hr/>
 <img src="/readmeimages/ua-ss3.png" />
 <hr/>
