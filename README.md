@@ -13,10 +13,7 @@ A website which contains few of the most commonly used utility tools.
 - html
 - css
 - Javascript
-- nodejs
-- express ^4.17.1
-- axios ^0.21.1
-- Heroku
+- Netlify
 
 ## UI
 <img src="/readmeimages/ua-ss1.jpg" height="400px"/>
