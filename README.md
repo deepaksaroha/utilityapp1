@@ -19,7 +19,7 @@ A website which contains few of the most commonly used utility tools.
 - Heroku
 
 ## UI
-<img src="/readmeimages/ua-ss1.jpg" />
+<img src="/readmeimages/ua-ss1.jpg" height="400px"/>
 <hr/>
 <img src="/readmeimages/ua-ss2.png" />
 <hr/>
