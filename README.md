@@ -20,9 +20,9 @@ A website which contains few of the most commonly used utility tools.
 
 ## UI
 <img src="/readmeimages/ua-ss1.jpg" />
-<br/><br/>
+<hr/>
 <img src="/readmeimages/ua-ss2.png" />
-<br/><br/>
+<hr/>
 <img src="/readmeimages/ua-ss3.png" />
-<br/><br/>
+<hr/>
 <img src="/readmeimages/ua-ss4.png" />
