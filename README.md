@@ -18,4 +18,4 @@ https://utility-tools-app.netlify.app/
 
 ## UI
 ### Landing page
-<img src="./images/ua-ss1.jpg" />
+<img src="./readmeimages/ua-ss1.jpg" />
