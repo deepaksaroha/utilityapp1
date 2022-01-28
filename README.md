@@ -21,7 +21,7 @@ https://utility-tools-app.netlify.app/
 <img src="./readmeimages/ua-ss1.jpg" />
 
 <div display="inline">
-### Unit Converter
+<h3>Unit Converter</h3>
 <img src="./readmeimages/ua-ss3.jpg" height="400"/>
 <div>
   
