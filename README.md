@@ -21,4 +21,5 @@ https://utility-tools-app.netlify.app/
 <img src="./readmeimages/ua-ss1.jpg" />
 
 <h3>Unit Converter</h3> | <h3>Time Stamp converter</h3> | <h3>Stop Watch</h3>
+--- | --- | ---
 <img src="./readmeimages/ua-ss3.jpg" height="400"/> | <img src="./readmeimages/ua-ss3.png" height="400"/> | <img src="./readmeimages/ua-ss4.png" height="400" />
