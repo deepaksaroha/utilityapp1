@@ -20,9 +20,11 @@ https://utility-tools-app.netlify.app/
 ### Landing page
 <img src="./readmeimages/ua-ss1.jpg" />
 
+<div display="inline">
 ### Unit Converter
 <img src="./readmeimages/ua-ss3.jpg" height="400"/>
-
+<div>
+  
 ### Time Stamp converter
 <img src="./readmeimages/ua-ss3.png" height="400" />
 
