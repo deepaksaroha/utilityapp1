@@ -22,4 +22,4 @@ https://utility-tools-app.netlify.app/
 
 Unit Converter | Time Stamp converter | Stop Watch
 --- | --- | ---
-<img src="./readmeimages/ua-ss3.jpg" height="400"/> | <img src="./readmeimages/ua-ss3.png" height="400"/> | <img src="./readmeimages/ua-ss4.png" height="400" />
+<img src="./readmeimages/ua-ss3.jpg" height="400" margin="10"/> | <img src="./readmeimages/ua-ss3.png" height="400" margin="10"/> | <img src="./readmeimages/ua-ss4.png" height="400" margin="10" />
