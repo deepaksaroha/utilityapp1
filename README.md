@@ -1,5 +1,6 @@
 # utilityapp1
-A website which contains few of the most commonly used utility tools. 
+A website which contains few of the most commonly used utility tools.<br/>
+https://utility-tools-app.netlify.app/
 
 ## Utility Tools
 - Text Encoder/Decoder
@@ -13,13 +14,13 @@ A website which contains few of the most commonly used utility tools.
 - html
 - css
 - Javascript
-- nodejs
-- express ^4.17.1
-- axios ^0.21.1
-- Heroku
+- Netlify
 
 ## UI
-<img src="/readmeimages/ua-ss1.jpg" />
-<img src="/readmeimages/ua-ss2.png" />
-<img src="/readmeimages/ua-ss3.png" />
-<img src="/readmeimages/ua-ss4.png" />
+<img src="/readmeimages/ua-ss1.jpg" height="400px"/>
+<hr/>
+<img src="/readmeimages/ua-ss2.png" height="400px"/>
+<hr/>
+<img src="/readmeimages/ua-ss3.png" height="400px"/>
+<hr/>
+<img src="/readmeimages/ua-ss4.png" height="400px"/>
