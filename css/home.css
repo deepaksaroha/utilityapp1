@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+}
+
+.home-grid-box{
+    margin: 100px auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.home-grid-box>a{
+    padding: 20px;
+    background-color: rgb(48, 112, 172);
+    color: whitesmoke;
+}
+
+.home-grid-item>h4{
+    text-decoration: underline;
+}
+
+.option-selector{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.options{
+    padding: 20px;
+    border: 1px solid grey;
+    white-space: nowrap;
+}
+
+.inout-flex-box{
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.text-box{
+    display: block;
+    height: 200px;
+    width: 500px;
+}
+
+.btns>button{
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    border: none;
+    background-color: rgb(34, 67, 251);
+    color: white;
+    border-radius: 1em;
+    margin-top: 20px;
+}
+
+.options:hover, .btns>button{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .home-grid-box{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .home-grid-box{
+        grid-template-columns: 1fr 1fr;
+    }
+    .text-box{
+        display: block;
+        height: 100px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .home-grid-box{
+        grid-template-columns: 1fr;
+    }
+    .home-grid-box>a{
+        padding: 10px;
+    }
+    
+    .option-selector{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    
+    .options{
+        width: 80%;
+        padding: 20px;
+        border: 1px solid grey;
+        white-space: nowrap;
+    }
+}

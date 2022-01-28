@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./navbar.css" />
-    <link rel="stylesheet" href="./unit.css" />
-    <script src="unit.js"></script>
-    <script type="text/javascript" src="./navbar.js"></script>
-  </head>
-  <body>
+    <link rel="stylesheet" href="../css/stopwatch.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <script src="../js/stopwatch.js"></script>
+    <script type="text/javascript" src="../js/navbar.js"></script>
+</head>
+<body>
+  <body> 
     <div class="navbar">
-      <img id="app-icon" src="./tool.png" alt="adna"/>
+      <img id="app-icon" src="../images/tool.png" alt="adna"/>
       <a href="./home.html" class="links">Home</a>
       <div id="navbar-menu-box" class="rlinks-box">
         <div class="menu">
-          <a href="./encode.html">Encoder/Decoder</a><button><img src="./expand.svg" /></button>
+          <a href="./encode.html">Encoder/Decoder</a><button><img src="../images/expand.svg" /></button>
           <div class="submenu">
             <a href="./encode.html">URL Encoder-Decoder</a>
             <a href="./encode.html">Base64 Encode</a>
@@ -28,21 +29,21 @@
           </div>
         </div>
         <div class="menu">
-          <a href="./rgbhex.html">RGB/HEX</a><button><img src="./expand.svg" /></button>
+          <a href="./rgbhex.html">RGB/HEX</a><button><img src="../images/expand.svg" /></button>
           <div class="submenu">
             <a href="./rgbhex.html">RGB-Hex</a>
             <a href="./rgbhex.html">Hex-RGB</a>
           </div>
         </div>
         <div class="menu">
-          <a href="./time.html">Time Stamp Converter</a><button><img src="./expand.svg" /></button>
+          <a href="./time.html">Time Stamp Converter</a><button><img src="../images/expand.svg" /></button>
           <div class="submenu">
             <a href="./time.html">Epoch-Unix</a>
             <a href="./time.html">Unix-Epoch</a>
           </div>
         </div>
         <div class="menu">
-          <a href="./unit.html">Unit Converter</a><button><img src="./expand.svg" /></button>
+          <a href="./unit.html">Unit Converter</a><button><img src="../images/expand.svg" /></button>
           <div class="submenu">
             <a href="./unit.html">Length Converter</a>
             <a href="./unit.html">Weight Converter</a>
@@ -50,7 +51,7 @@
           </div>
         </div>
         <div class="menu">
-          <a href="./base.html">Base Converter</a><button><img src="./expand.svg" /></button>
+          <a href="./base.html">Base Converter</a><button><img src="../images/expand.svg" /></button>
           <div class="submenu">
             <a href="./base.html">Bin to Dec</a>
             <a href="./base.html">Bin to Hex</a>
@@ -67,7 +68,7 @@
           </div>
         </div>
         <div class="menu">
-          <a href="./text.html">Text Tools</a><button><img src="./expand.svg" /></button>
+          <a href="./text.html">Text Tools</a><button><img src="../images/expand.svg" /></button>
           <div class="submenu">
             <a href="./text.html">Split Text</a>
             <a href="./text.html">Join Text</a>
@@ -77,36 +78,18 @@
           </div>
         </div>
       </div>
-      <button id="menu-icon" ><img src="./menu.svg" alt="menu" ></button>
-    </div>
+      <button id="menu-icon" ><img src="../images/menu.svg" alt="menu" ></button>
+  </div>
 
     <main>
-        <div class="quantity-options">
-          <button id="unit-expand-btn">Select Quantity</button>
-          <div>
-            <button id="distance" class="quantities">Distance</button>
-            <button id="time" class="quantities">Time</button>
-            <button id="weight" class="quantities">Weight</button>
-          </div>         
-        </div>
-        <div class="flex-container">
-            <div class="Items">
-                <div>
-                    <input id="input-value" type="text" class="input-value" /><br/>
-                    <select id="input-unit-selection" class="select-unit"  disabled="true" >
-                    </select>
-                </div>
-            </div>
-            <div class="Items">
-                <button id="convert-btn">Convert</button>
-            </div>
-            <div class="Items">
-                <p id="output-value" class="output-value"></p><br/>
-                <select id="output-unit-selection" class="select-unit" disabled="true">
-                </select>
+        <div class="stop-outer-box">
+            <div id="stop-d-box">&ndash;&ndash;</div>
+            <div>
+                <button id="start-btn" class="timer-btns">Start</button>
+                <button id="stop-btn" class="timer-btns">Stop</button>
+                <button id="reset-btn" class="timer-btns">Reset</button>
             </div>
         </div>
-        
     </main>
-  </body>
+</body>
 </html>

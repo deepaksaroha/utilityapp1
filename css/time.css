@@ -15,7 +15,7 @@ body {
 
 
 .disp{
-    font-size: 3vw;
+    font-size: 2vw;
     color: white;
     background-color: #37474F;
     width: fit-content;
@@ -28,9 +28,9 @@ body {
     text-align: center;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    font-size: 30px;
+    font-size: 20px;
     box-shadow: 0 0 10px grey;
-    margin: 20px;
+    margin: 10px;
 }
 
 .heading{
@@ -39,8 +39,8 @@ body {
 }
 
 .inputs {
-    font-size: 40px;
-    width: 300px;
+    font-size: 20px;
+    width: 200px;
     outline: none;
     border-radius: 5px;
     border: none;
@@ -51,24 +51,25 @@ body {
     padding: 10px;
     background-color: #37474F;
     border-radius: 50%;
+    color: white;
 }
 
 .switch-box>img{
-    height: 2em;
+    height: 1.5em;
 }
 
 
 .btn-box{
-    margin: 50px auto;
+    margin: 30px auto;
     text-align: center;
 }
 
 .btn-box>button{
-    padding: 25px 100px;
+    padding: 10px 50px;
     font-size: 30px;
     border-radius: 20px;
     border: none;
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(34, 67, 251);
     color: rgb(224, 223, 223);
 }
 
@@ -77,7 +78,7 @@ body {
     border-top-right-radius: 20px;
     border: 1px solid grey;
     background-color:grey;
-    padding: 20px;
+    padding: 10px;
     color: white;
 }
 
@@ -89,7 +90,6 @@ body {
 @media screen and (max-width: 850px) {
     .outer-box{
         width: 90%;
-        margin: 50px auto;
     }
 
     .disp{
@@ -105,23 +105,22 @@ body {
     }
 
     .btn-box>button{
-        padding: 1em 1em;
-        font-size: 1.5em;
-        width: 60%;
+        padding: 0.5em 0.7em;
+        font-size: 1em;
         overflow: hidden;
     }
     input{
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .partitioner-top, .partitioner-bottom{
         padding: 10px;
-        font-size: 25px;
+        font-size: 16px;
     }
 
     .partitioner-bottom>input{
-        font-size: 25px;
-        width: 100%;
-        min-width: 200px;
+        font-size: 16px;
+        width: 50%;
+        min-width: 150px;
     }
 }

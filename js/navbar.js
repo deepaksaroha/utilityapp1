@@ -33,7 +33,7 @@ window.addEventListener('load', () => {
         menuItemName.innerText = element.itemName;
         let btn = document.createElement('button');
         let img = document.createElement('img');
-        img.setAttribute('src', './expand.svg');
+        img.setAttribute('src', '../images/expand.svg');
         btn.appendChild(img);
         let subMenu = document.createElement('div');
         subMenu.setAttribute('class', 'submenu');

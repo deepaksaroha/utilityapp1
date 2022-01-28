@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-content{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.flex-items1{
+    text-align: right;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px grey;
+    width: fit-content;
+}
+
+.flex-items1>div>input, #output-input{
+    padding: 5px;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+.button-box{
+    text-align: center;
+}
+
+.btn{
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(35, 113, 216);
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    .main-content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+

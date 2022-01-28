@@ -12,26 +12,56 @@ const units = {
 
 window.onload = () =>{
     let selection = 'distance';
-    
-    let d = document.getElementById("distance");
-    d.addEventListener("click", (e) => {
-        selection = "distance";
-        setUnits();
-    })
-    
-    let t = document.getElementById("time");
-    t.addEventListener("click", (e) => {
-        selection = "time";
-        setUnits();
-    })
-    
-    let w = document.getElementById("weight");
-    w.addEventListener("click", (e) => {
-        selection = "weight";
-        setUnits();
-    })
+    const option = document.querySelectorAll('.options');
 
-    function setUnits(){
+    option.forEach(ele=>{
+        ele.addEventListener('click', (e)=>{
+            selection = e.target.getAttribute('name');
+            setUnits(selection);
+            e.target.style.backgroundColor = "grey";
+            e.target.style.color = "whitesmoke";
+            uncolor(e.target);
+        })
+    })
+    
+    // let d = document.getElementById("distance");
+    // d.addEventListener("click", (e) => {
+    //     selection = "distance";
+    //     setUnits();
+    //     e.target.style.backgroundColor = "grey";
+    //     e.target.style.color = "whitesmoke";
+    //     uncolor(e.target);
+    // })
+    
+    // let t = document.getElementById("time");
+    // t.addEventListener("click", (e) => {
+    //     selection = "time";
+    //     setUnits();
+    //     e.target.style.backgroundColor = "grey";
+    //     e.target.style.color = "whitesmoke";
+    //     uncolor(e.target);
+    // })
+    
+    // let w = document.getElementById("weight");
+    // w.addEventListener("click", (e) => {
+    //     selection = "weight";
+    //     setUnits();
+    //     e.target.style.backgroundColor = "grey";
+    //     e.target.style.color = "whitesmoke";
+    //     uncolor(e.target);
+    // })
+
+    function uncolor(target){
+        option.forEach(ele=>{
+            if(ele !== target){
+                ele.style.backgroundColor = "unset";
+                ele.style.color = "unset";
+            }
+        }
+    )};
+
+    function setUnits(selection){
+        
         document.getElementById("input-unit-selection").removeAttribute('disabled');
         document.getElementById("output-unit-selection").removeAttribute('disabled');
 
@@ -40,6 +70,7 @@ window.onload = () =>{
 
         select.innerHTML = '';
         select1.innerHTML = '';
+
 
         switch(selection){
             case "distance": 
@@ -201,15 +232,15 @@ window.onload = () =>{
     })
     
 
-    const expandBtn = document.getElementById('unit-expand-btn');
+    // const expandBtn = document.getElementById('unit-expand-btn');
     const options = document.querySelector('.quantity-options>div');
-    expandBtn.addEventListener('click', ()=>{
-        if(options.style.display == "block"){
-            options.style.display = "none";
-        }else{
-            options.style.display = "block";
-        }
+    // expandBtn.addEventListener('click', ()=>{
+    //     if(options.style.display == "block"){
+    //         options.style.display = "none";
+    //     }else{
+    //         options.style.display = "block";
+    //     }
         
-    })
+    // })
 
 }

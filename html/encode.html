@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./navbar.css" />
-    <link rel="stylesheet" href="./base.css" />
-    <script src="base.js"></script>
-    <script type="text/javascript" src="./navbar.js"></script>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/encode.js"></script>
   </head>
-  <body>
+  <body> 
     <div class="navbar">
-      <img id="app-icon" src="./tool.png" alt="adna"/>
+      <img id="app-icon" src="../images/tool.png" alt="adna"/>
       <a href="./home.html" class="links">Home</a>
       <div id="navbar-menu-box" class="rlinks-box">
         <div class="menu">
-          <a href="./encode.html">Encoder/Decoder</a><button><img src="./expand.svg" /></button>
+          <a href="./encode.html">Encoder/Decoder</a><button><img src="../images/expand.svg" /></button>
           <div class="submenu">
             <a href="./encode.html">URL Encoder-Decoder</a>
             <a href="./encode.html">Base64 Encode</a>
@@ -28,21 +29,21 @@
           </div>
         </div>
         <div class="menu">
-          <a href="./rgbhex.html">RGB/HEX</a><button><img src="./expand.svg" /></button>
+          <a href="./rgbhex.html">RGB/HEX</a><button><img src="../images/expand.svg" /></button>
           <div class="submenu">
             <a href="./rgbhex.html">RGB-Hex</a>
             <a href="./rgbhex.html">Hex-RGB</a>
           </div>
         </div>
         <div class="menu">
-          <a href="./time.html">Time Stamp Converter</a><button><img src="./expand.svg" /></button>
+          <a href="./time.html">Time Stamp Converter</a><button><img src="../images/expand.svg" /></button>
           <div class="submenu">
             <a href="./time.html">Epoch-Unix</a>
             <a href="./time.html">Unix-Epoch</a>
           </div>
         </div>
         <div class="menu">
-          <a href="./unit.html">Unit Converter</a><button><img src="./expand.svg" /></button>
+          <a href="./unit.html">Unit Converter</a><button><img src="../images/expand.svg" /></button>
           <div class="submenu">
             <a href="./unit.html">Length Converter</a>
             <a href="./unit.html">Weight Converter</a>
@@ -50,7 +51,7 @@
           </div>
         </div>
         <div class="menu">
-          <a href="./base.html">Base Converter</a><button><img src="./expand.svg" /></button>
+          <a href="./base.html">Base Converter</a><button><img src="../images/expand.svg" /></button>
           <div class="submenu">
             <a href="./base.html">Bin to Dec</a>
             <a href="./base.html">Bin to Hex</a>
@@ -67,7 +68,7 @@
           </div>
         </div>
         <div class="menu">
-          <a href="./text.html">Text Tools</a><button><img src="./expand.svg" /></button>
+          <a href="./text.html">Text Tools</a><button><img src="../images/expand.svg" /></button>
           <div class="submenu">
             <a href="./text.html">Split Text</a>
             <a href="./text.html">Join Text</a>
@@ -77,47 +78,37 @@
           </div>
         </div>
       </div>
-      <button id="menu-icon" ><img src="./menu.svg" alt="menu" ></button>
-    </div>
+      <button id="menu-icon" ><img src="../images/menu.svg" alt="menu" ></button>
+  </div>
 
     <main>
-        
-        <div class="flex-box">
-            <div class="item">
-                <div class="input-box">
-                    <p>Select From Base:</p>
-                    <select id="input-base" class="input-select-box">
-                        <option class="input-option" value="2">Binary</option>
-                        <option class="input-option" value="10">Decimal</option>
-                        <option class="input-option" value="8">Octal</option>
-                        <option class="input-option" value="16">Hexadecimal</option>
-                    </select>
-                    <div class="base-input" ><p>Input Number:</p><input id="input-value" type="text" placeholder="Input number" /></div>
-                </div>
-            </div>
+      <div class="main-outer-box">
+          <div class="option-selector" multiple>
+              <div class="options" name="url">URL Encode/Decode</div>
+              <div class="options" name="base 64 en">Base 64 Encode</div>
+              <div class="options" name="base 64 de">Base 64 Decode</div>
+              <div class="options" name="MD5">MD5 Genrator</div>
+              <div class="options" name="SHA-1">SHA-1 Genrator</div>
+              <div class="options" name="SHA-256">SHA-256 Genrator</div>
+              <div class="options" name="SHA-512">SHA-512 Genrator</div>
+          </div>
 
-            <div class="item">
-                <div class="select-to-box">
-                    <p class="to-heading">Select To Base</p>
-                    <select id="output-base" class="to-select-box">
-                        <option class="to-option" value="2">Binary</option>
-                        <option class="to-option" value="10">Decimal</option>
-                        <option class="to-option" value="8">Octal</option>
-                        <option class="to-option" value="16">Hexadecimal</option>
-                    </select>
-                </div>
-                <button id="btn" class="convert-btn">Convert</button>
-            </div>
-
-            
-        </div>
-        <div class="output-container">
-          <div class="output-box">
-              <p>Output Number:</p>
-              <output id="output-value" class="base-output"></output>
+          <div class="inout-flex-box">
+              <div class="item text-box-container">
+                  <label>Input</label>
+                  <textarea id="input-text" class="text-box"></textarea>
+              </div>
+              <div class="btns">
+                  <button id="encode">Encode</button>
+                  <button id="decode">Decode</button>
+                  <button id="gen">Genrate</button>
+              </div>
+              <div class="item text-box-container">
+                  <label>Output</label>
+                  <textarea id="output-text" class="text-box"></textarea>
+              </div>
           </div>
       </div>
-
     </main>
   </body>
 </html>
