@@ -1,22 +1,22 @@
 let menuList = [
     {
         subMenuList: [],
-        href: './timer.html',
+        href: '/html/timer.html',
         itemName: 'Timer'
     },
     {
         subMenuList: [],
-        href: './stopwatch.html',
+        href: '/html/stopwatch.html',
         itemName: 'Stopwatch'
     },
     {
         subMenuList: [],
-        href: './ip.html',
+        href: '/html/ip.html',
         itemName: 'My IP'
     },
     {
         subMenuList: [],
-        href: './linguist.html',
+        href: '/html/linguist.html',
         itemName: 'Linguist'
     }
 ]
@@ -31,10 +31,11 @@ window.addEventListener('load', () => {
         let menuItemName = document.createElement('a');
         menuItemName.setAttribute('href', element.href);
         menuItemName.innerText = element.itemName;
-        let btn = document.createElement('button');
-        if(subMenuList.length > 0){
+
+        if(element.subMenuList.length>0){
+            let btn = document.createElement('button');
             let img = document.createElement('img');
-            img.setAttribute('src', '../images/expand.svg');
+            img.setAttribute('src', '/images/expand.svg');
             btn.appendChild(img);
             let subMenu = document.createElement('div');
             subMenu.setAttribute('class', 'submenu');
@@ -44,10 +45,26 @@ window.addEventListener('load', () => {
                 subMenuItemName.innerText = ele;
                 subMenu.appendChild(subMenuItemName);
             })
+            menu.appendChild(btn);
+            menu.appendChild(subMenu);
         }
+
+        // let btn = document.createElement('button');
+        // let img = document.createElement('img');
+        // img.setAttribute('src', '../images/expand.svg');
+        // btn.appendChild(img);
+        // let subMenu = document.createElement('div');
+        // subMenu.setAttribute('class', 'submenu');
+        // element.subMenuList.forEach(ele=>{
+        //     let subMenuItemName = document.createElement('a');
+        //     subMenuItemName.setAttribute('href', element.href);
+        //     subMenuItemName.innerText = ele;
+        //     subMenu.appendChild(subMenuItemName);
+        // })
+        // menu.appendChild(btn);
+        // menu.appendChild(subMenu);
+
         menu.appendChild(menuItemName);
-        menu.appendChild(btn);
-        menu.appendChild(subMenu);
         menuItemBox.appendChild(menu);
     })
 
