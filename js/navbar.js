@@ -49,21 +49,6 @@ window.addEventListener('load', () => {
             menu.appendChild(subMenu);
         }
 
-        // let btn = document.createElement('button');
-        // let img = document.createElement('img');
-        // img.setAttribute('src', '../images/expand.svg');
-        // btn.appendChild(img);
-        // let subMenu = document.createElement('div');
-        // subMenu.setAttribute('class', 'submenu');
-        // element.subMenuList.forEach(ele=>{
-        //     let subMenuItemName = document.createElement('a');
-        //     subMenuItemName.setAttribute('href', element.href);
-        //     subMenuItemName.innerText = ele;
-        //     subMenu.appendChild(subMenuItemName);
-        // })
-        // menu.appendChild(btn);
-        // menu.appendChild(subMenu);
-
         menu.appendChild(menuItemName);
         menuItemBox.appendChild(menu);
     })
@@ -82,7 +67,7 @@ window.addEventListener('load', () => {
         }
     })
 
-    const expandBtn = document.querySelectorAll('.menu>button');
+    const expandBtn = document.querySelectorAll('.link-box>button');
     expandBtn.forEach(ele => {
         ele.addEventListener('click', (e)=>{
             const subMenu = ele.nextElementSibling;
@@ -90,7 +75,16 @@ window.addEventListener('load', () => {
                 subMenu.style.display = 'none';
             }else{
                 subMenu.style.display = 'block';
-            }            
+            }
+            close(subMenu);
         })
     })
+
+    function close(target){
+        expandBtn.forEach(ele=>{
+            if(ele.nextElementSibling != target){
+                ele.nextElementSibling.style.display = 'none';
+            }
+        })
+    }
 })

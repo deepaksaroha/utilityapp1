@@ -15,20 +15,25 @@ window.onload = () => {
     const btn = document.getElementById('btn');
     btn.addEventListener('click', ()=>{
         if(f == true){
-            const red = Math.max(Math.min(document.getElementById("red").value, 255), 0);
+            const red = Math.max(0, Math.min(document.getElementById("red").value, 255));
+            document.getElementById("red").value = red;
             const green = Math.max(0, Math.min(document.getElementById("green").value, 255));
+            document.getElementById("green").value = green;
             const blue = Math.max(0, Math.min(document.getElementById("blue").value, 255));
+            document.getElementById("blue").value = blue;
             const hex = red.toString(16)+green.toString(16)+blue.toString(16);
             document.getElementById('output-input').value = hex;
         }else{
             const hex = document.getElementById("output-input").value;
+            if(new RegExp("^[A-Fa-f0-9]{6}$").test(hex)){  
+                const red = parseInt(hex.slice(0,2), 16);
+                const green = parseInt(hex.slice(2,4), 16);
+                const blue = parseInt(hex.slice(4,6), 16);
+                document.getElementById("red").value = red;
+                document.getElementById("green").value = green;
+                document.getElementById("blue").value = blue;
+            }
             
-            const red = parseInt(hex.slice(0,2), 16);
-            const green = parseInt(hex.slice(2,4), 16);
-            const blue = parseInt(hex.slice(4,6), 16);
-            document.getElementById("red").value = red;
-            document.getElementById("green").value = green;
-            document.getElementById("blue").value = blue;;
         }     
     })
 

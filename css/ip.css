@@ -2,6 +2,7 @@ main{
     font-size: 3vw;
     height: 100vh;
     text-align: center;
+    background-color: whitesmoke;
 }
 
 .disp{
@@ -12,7 +13,6 @@ main>div{
     width: 80%;
     height: 100%;
     margin: 0 auto;
-    background-color: whitesmoke;
 }
 
 #ip-btn{

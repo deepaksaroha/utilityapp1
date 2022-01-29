@@ -4,6 +4,11 @@ window.onload = () => {
     let val = "bd";
 
     option.forEach(ele=>{
+        if(ele.getAttribute('name') === 'bd'){
+            ele.style.backgroundColor = "grey";
+            ele.style.color = "whitesmoke";
+        }
+
         ele.addEventListener('click', (event)=>{
             val = event.target.getAttribute('name');
             document.getElementById('input-text').value = "";

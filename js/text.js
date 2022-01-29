@@ -7,6 +7,11 @@ window.addEventListener('load', () =>{
     let val = "spl";
 
     options.forEach(element=>{
+        if(element.getAttribute('name') === 'spl'){
+            element.style.backgroundColor = "grey";
+            element.style.color = "whitesmoke";
+        }
+
         element.addEventListener('click', (e)=>{
             val = e.target.getAttribute('name');
             document.getElementById("input-text").innerText = "";

@@ -5,11 +5,18 @@ window.onload = ()=>{
     btnSelector("inline", "inline", "none");
 
     option.forEach(ele=>{
+        if(ele.getAttribute('name') === 'url'){
+            ele.style.backgroundColor = "grey";
+            ele.style.color = "whitesmoke";
+        }
+
         ele.addEventListener('click', (event)=>{
             val = event.target.getAttribute('name');
             event.target.style.backgroundColor = "grey";
             event.target.style.color = "whitesmoke";
             uncolor(event.target);
+            document.getElementById("input-text").value = "";
+            document.getElementById("output-text").value = "";
 
             switch(val){
                 case "url":

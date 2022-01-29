@@ -21,6 +21,7 @@ window.addEventListener('load', () => {
 
         document.getElementById("human-date-input").value = '';
         document.getElementById("human-time-input").value = '';
+        document.getElementById("epoch-time-input").value = '';
         
         if(f == 0){
             f = 1;

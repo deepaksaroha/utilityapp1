@@ -48,16 +48,24 @@ window.addEventListener('load', ()=>{
         opt.setAttribute('class', 'to-option');
         opt.setAttribute('value', codes[i]);
         opt.innerText = languages[i];
+        if(languages[i] === "English"){
+            opt.setAttribute('selected', "selected");
+        }
         inSelect.appendChild(opt);
     }
 
     const outSelect = document.getElementById('lang-outopt');
+
+
 
     for(let i in languages){
         let opt = document.createElement('option');
         opt.setAttribute('class', 'from-option');
         opt.setAttribute('value', codes[i]);
         opt.innerText = languages[i];
+        if(languages[i] === "Hindi"){
+            opt.setAttribute('selected', "selected");
+        }
         outSelect.appendChild(opt);
     }
 

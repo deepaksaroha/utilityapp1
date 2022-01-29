@@ -9,6 +9,11 @@ a{
     color: unset;
 }
 
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
 .navbar {
     position: relative;
     border-bottom: 1px solid rgb(195, 193, 193);
@@ -28,18 +33,27 @@ a{
 
 .rlinks-box {
     float: right;
-    margin-top: 20px;
 }
 
 .navbar a {
-    padding: 20px;
     padding-right: 0px;
 }
 
-.navbar a:hover{
+.rlinks-box{
+    display: flex;
+}
+
+.link-box>button{
+    border: none;
+    background-color: unset;
+}
+
+.menu{
+    padding: 10px;
+}
+
+.menu:hover{
     background: rgb(209, 208, 208);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
 }
 
 .menu {   
@@ -54,18 +68,23 @@ a{
     top: 2.5em;
     display: none;
     color: rgb(48, 60, 83);
+    width: 100%;
+}
+
+.submenu :mouseout{
+    display: none;
 }
 
 .submenu a {
     display: block;
     padding: 5px;
-    background-color: rgb(218, 218, 218);
+    box-shadow: 0 0 1px 1px grey;
+    background-color: whitesmoke;
 }
 
 .submenu a:hover{
-    background-color: rgb(209, 209, 209);
+    background-color: rgb(185, 185, 185);
 }
-
 
 #menu-icon{
     border: none;
@@ -124,14 +143,5 @@ a{
         opacity:100%;
     }
 
-    .submenu a {
-        background-color: rgb(255, 219, 219);
-    }
 
-}
-
-@media screen and (min-width: 1581px) {
-    .rlinks-box{
-        display: block !important;
-    }
 }
