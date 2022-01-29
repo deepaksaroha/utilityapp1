@@ -32,17 +32,19 @@ window.addEventListener('load', () => {
         menuItemName.setAttribute('href', element.href);
         menuItemName.innerText = element.itemName;
         let btn = document.createElement('button');
-        let img = document.createElement('img');
-        img.setAttribute('src', '../images/expand.svg');
-        btn.appendChild(img);
-        let subMenu = document.createElement('div');
-        subMenu.setAttribute('class', 'submenu');
-        element.subMenuList.forEach(ele=>{
-            let subMenuItemName = document.createElement('a');
-            subMenuItemName.setAttribute('href', element.href);
-            subMenuItemName.innerText = ele;
-            subMenu.appendChild(subMenuItemName);
-        })
+        if(subMenuList.length > 0){
+            let img = document.createElement('img');
+            img.setAttribute('src', '../images/expand.svg');
+            btn.appendChild(img);
+            let subMenu = document.createElement('div');
+            subMenu.setAttribute('class', 'submenu');
+            element.subMenuList.forEach(ele=>{
+                let subMenuItemName = document.createElement('a');
+                subMenuItemName.setAttribute('href', element.href);
+                subMenuItemName.innerText = ele;
+                subMenu.appendChild(subMenuItemName);
+            })
+        }
         menu.appendChild(menuItemName);
         menu.appendChild(btn);
         menu.appendChild(subMenu);
