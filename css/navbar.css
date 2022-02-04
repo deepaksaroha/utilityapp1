@@ -142,6 +142,9 @@ a{
         top: 0em;
         opacity:100%;
     }
-
-
+}
+@media screen and (min-width: 1581px){
+    .rlinks-box{
+        display: flex !important;
+    }
 }
