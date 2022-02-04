@@ -77,6 +77,10 @@ window.addEventListener('load', ()=>{
         let inputText = document.getElementById('lang-input').value;
         let outputEle = document.getElementById('lang-output');
 
+        if(inputText == ''){
+            return;
+        }
+
         fetch(`https://api.mymemory.translated.net/get?q=${inputText}&langpair=${inputLang}|${outputLang}`)
         .then(response =>  response.json() )
         .then(response=>{
